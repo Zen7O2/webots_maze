@@ -1,0 +1,889 @@
+#VRML_SIM R2022b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/robots/mobsya/thymio/protos/Thymio2.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/apartment_structure/protos/Wall.proto"
+
+WorldInfo {
+  basicTimeStep 32
+  optimalThreadCount 10
+  randomSeed 1
+  contactProperties [
+    ContactProperties {
+      material2 "thymio body"
+      coulombFriction [
+        0
+      ]
+    }
+  ]
+}
+Viewpoint {
+  orientation -0.5773502691896257 0.5773502691896257 0.5773502691896257 2.0943245915045035
+  position 2.5 2.5 10
+}
+RectangleArena {
+  translation 2.5 2.5 0
+  floorSize 5 5
+  floorAppearance Appearance {
+    texture DEF PheromoneImage ImageTexture {
+      url [
+        "../controllers/main_skript/maps/pheromone_map0.png"
+      ]
+      repeatS FALSE
+      repeatT FALSE
+      filtering 1
+    }
+    textureTransform TextureTransform {
+      scale 0.1 0.1
+    }
+  }
+}
+
+TexturedBackground {
+  texture "empty_office"
+  luminosity 3
+  skybox FALSE
+}
+DEF Thymio1 Thymio2 {
+  translation 2.665924618584748 4.222646585659477 0
+  rotation 0 0 1 5.805889117340377
+  name "Thymio1"
+  controller "main_skript"
+  supervisor TRUE
+  castLight FALSE
+  bodySlot [
+    Emitter {
+      name "emitter1"
+      type "infra-red"
+      range 0.4
+    }
+    Receiver {
+      name "receiver1"
+      type "infra-red"
+      aperture 3
+    }
+  ]
+}
+DEF Thymio2 Thymio2 {
+  translation 4.166437028920113 1.241883521305066 0
+  rotation 0 0 1 5.611702731376347
+  name "Thymio2"
+  controller "main_skript"
+  supervisor TRUE
+  castLight FALSE
+  bodySlot [
+    Emitter {
+      name "emitter2"
+      type "infra-red"
+      range 0.4
+    }
+    Receiver {
+      name "receiver2"
+      type "infra-red"
+      aperture 3
+    }
+  ]
+}
+DEF Thymio3 Thymio2 {
+  translation 3.766079563236403 4.772789923936583 0
+  rotation 0 0 1 2.058838063131028
+  name "Thymio3"
+  controller "main_skript"
+  supervisor TRUE
+  castLight FALSE
+  bodySlot [
+    Emitter {
+      name "emitter3"
+      type "infra-red"
+      range 0.4
+    }
+    Receiver {
+      name "receiver3"
+      type "infra-red"
+      aperture 3
+    }
+  ]
+}
+DEF Thymio4 Thymio2 {
+  translation 3.1826940356078337 4.791684448248548 0
+  rotation 0 0 1 3.944542475133585
+  name "Thymio4"
+  controller "main_skript"
+  supervisor TRUE
+  castLight FALSE
+  bodySlot [
+    Emitter {
+      name "emitter4"
+      type "infra-red"
+      range 0.4
+    }
+    Receiver {
+      name "receiver4"
+      type "infra-red"
+      aperture 3
+    }
+  ]
+}
+DEF Thymio5 Thymio2 {
+  translation 0.368740699863794 3.7023681730260476 0
+  rotation 0 0 1 4.677735692866878
+  name "Thymio5"
+  controller "main_skript"
+  supervisor TRUE
+  castLight FALSE
+  bodySlot [
+    Emitter {
+      name "emitter5"
+      type "infra-red"
+      range 0.4
+    }
+    Receiver {
+      name "receiver5"
+      type "infra-red"
+      aperture 3
+    }
+  ]
+}
+DEF Thymio6 Thymio2 {
+  translation 4.142003946795242 0.7919219625074299 0
+  rotation 0 0 1 1.2011191472978946
+  name "Thymio6"
+  controller "main_skript"
+  supervisor TRUE
+  castLight FALSE
+  bodySlot [
+    Emitter {
+      name "emitter6"
+      type "infra-red"
+      range 0.4
+    }
+    Receiver {
+      name "receiver6"
+      type "infra-red"
+      aperture 3
+    }
+  ]
+}
+DEF Thymio7 Thymio2 {
+  translation 0.35887883099304047 0.3596035115668919 0
+  rotation 0 0 1 6.259234010576199
+  name "Thymio7"
+  controller "main_skript"
+  supervisor TRUE
+  castLight FALSE
+  bodySlot [
+    Emitter {
+      name "emitter7"
+      type "infra-red"
+      range 0.4
+    }
+    Receiver {
+      name "receiver7"
+      type "infra-red"
+      aperture 3
+    }
+  ]
+}
+DEF Thymio8 Thymio2 {
+  translation 0.8744891284763103 2.2365516802925014 0
+  rotation 0 0 1 0.6956196941644207
+  name "Thymio8"
+  controller "main_skript"
+  supervisor TRUE
+  castLight FALSE
+  bodySlot [
+    Emitter {
+      name "emitter8"
+      type "infra-red"
+      range 0.4
+    }
+    Receiver {
+      name "receiver8"
+      type "infra-red"
+      aperture 3
+    }
+  ]
+}
+DEF Thymio9 Thymio2 {
+  translation 0.3671062444843717 4.28544610266105 0
+  rotation 0 0 1 5.7450803886535935
+  name "Thymio9"
+  controller "main_skript"
+  supervisor TRUE
+  castLight FALSE
+  bodySlot [
+    Emitter {
+      name "emitter9"
+      type "infra-red"
+      range 0.4
+    }
+    Receiver {
+      name "receiver9"
+      type "infra-red"
+      aperture 3
+    }
+  ]
+}
+DEF Thymio10 Thymio2 {
+  translation 2.7710458577976853 3.67717198131435 0
+  rotation 0 0 1 2.2931125960396526
+  name "Thymio10"
+  controller "main_skript"
+  supervisor TRUE
+  castLight FALSE
+  bodySlot [
+    Emitter {
+      name "emitter10"
+      type "infra-red"
+      range 0.4
+    }
+    Receiver {
+      name "receiver10"
+      type "infra-red"
+      aperture 3
+    }
+  ]
+}
+DEF Thymio11 Thymio2 {
+  translation 2.794374457356353 2.241104785336868 0
+  rotation 0 0 1 6.24578666726805
+  name "Thymio11"
+  controller "main_skript"
+  supervisor TRUE
+  castLight FALSE
+  bodySlot [
+    Emitter {
+      name "emitter11"
+      type "infra-red"
+      range 0.4
+    }
+    Receiver {
+      name "receiver11"
+      type "infra-red"
+      aperture 3
+    }
+  ]
+}
+DEF Thymio12 Thymio2 {
+  translation 4.671007953744625 3.804436534957584 0
+  rotation 0 0 1 3.766758456848686
+  name "Thymio12"
+  controller "main_skript"
+  supervisor TRUE
+  castLight FALSE
+  bodySlot [
+    Emitter {
+      name "emitter12"
+      type "infra-red"
+      range 0.4
+    }
+    Receiver {
+      name "receiver12"
+      type "infra-red"
+      aperture 3
+    }
+  ]
+}
+DEF Thymio13 Thymio2 {
+  translation 4.740240330624808 4.345789503973271 0
+  rotation 0 0 1 4.119484408545256
+  name "Thymio13"
+  controller "main_skript"
+  supervisor TRUE
+  castLight FALSE
+  bodySlot [
+    Emitter {
+      name "emitter13"
+      type "infra-red"
+      range 0.4
+    }
+    Receiver {
+      name "receiver13"
+      type "infra-red"
+      aperture 3
+    }
+  ]
+}
+DEF Thymio14 Thymio2 {
+  translation 0.16764819097905995 0.7665421063188148 0
+  rotation 0 0 1 5.934373413069606
+  name "Thymio14"
+  controller "main_skript"
+  supervisor TRUE
+  castLight FALSE
+  bodySlot [
+    Emitter {
+      name "emitter14"
+      type "infra-red"
+      range 0.4
+    }
+    Receiver {
+      name "receiver14"
+      type "infra-red"
+      aperture 3
+    }
+  ]
+}
+DEF Thymio15 Thymio2 {
+  translation 4.7547415700523565 1.2904036463986603 0
+  rotation 0 0 1 1.5847168479390583
+  name "Thymio15"
+  controller "main_skript"
+  supervisor TRUE
+  castLight FALSE
+  bodySlot [
+    Emitter {
+      name "emitter15"
+      type "infra-red"
+      range 0.4
+    }
+    Receiver {
+      name "receiver15"
+      type "infra-red"
+      aperture 3
+    }
+  ]
+}
+DEF Thymio16 Thymio2 {
+  translation 3.204708368168989 0.8037881929768371 0
+  rotation 0 0 1 6.2213140173714345
+  name "Thymio16"
+  controller "main_skript"
+  supervisor TRUE
+  castLight FALSE
+  bodySlot [
+    Emitter {
+      name "emitter16"
+      type "infra-red"
+      range 0.4
+    }
+    Receiver {
+      name "receiver16"
+      type "infra-red"
+      aperture 3
+    }
+  ]
+}
+DEF Thymio17 Thymio2 {
+  translation 2.274086705977512 0.2808279563536713 0
+  rotation 0 0 1 0.4186659903790242
+  name "Thymio17"
+  controller "main_skript"
+  supervisor TRUE
+  castLight FALSE
+  bodySlot [
+    Emitter {
+      name "emitter17"
+      type "infra-red"
+      range 0.4
+    }
+    Receiver {
+      name "receiver17"
+      type "infra-red"
+      aperture 3
+    }
+  ]
+}
+DEF Thymio18 Thymio2 {
+  translation 3.2603384083146034 0.3517561065855109 0
+  rotation 0 0 1 2.738298424102583
+  name "Thymio18"
+  controller "main_skript"
+  supervisor TRUE
+  castLight FALSE
+  bodySlot [
+    Emitter {
+      name "emitter18"
+      type "infra-red"
+      range 0.4
+    }
+    Receiver {
+      name "receiver18"
+      type "infra-red"
+      aperture 3
+    }
+  ]
+}
+DEF Thymio19 Thymio2 {
+  translation 0.7116489539049065 3.245108633268351 0
+  rotation 0 0 1 5.9751322877171145
+  name "Thymio19"
+  controller "main_skript"
+  supervisor TRUE
+  castLight FALSE
+  bodySlot [
+    Emitter {
+      name "emitter19"
+      type "infra-red"
+      range 0.4
+    }
+    Receiver {
+      name "receiver19"
+      type "infra-red"
+      aperture 3
+    }
+  ]
+}
+DEF Thymio20 Thymio2 {
+  translation 2.8453293842848777 3.174820837221731 0
+  rotation 0 0 1 6.255578083094434
+  name "Thymio20"
+  controller "main_skript"
+  supervisor TRUE
+  castLight FALSE
+  bodySlot [
+    Emitter {
+      name "emitter20"
+      type "infra-red"
+      range 0.4
+    }
+    Receiver {
+      name "receiver20"
+      type "infra-red"
+      aperture 3
+    }
+  ]
+}
+DEF Thymio21 Thymio2 {
+  translation 4.863111201559961 4.662696303169851 0
+  rotation 0 0 1 1.9975392230686893
+  name "Thymio21"
+  controller "main_skript"
+  supervisor TRUE
+  castLight FALSE
+  bodySlot [
+    Emitter {
+      name "emitter21"
+      type "infra-red"
+      range 0.4
+    }
+    Receiver {
+      name "receiver21"
+      type "infra-red"
+      aperture 3
+    }
+  ]
+}
+DEF Thymio22 Thymio2 {
+  translation 4.194268515397547 2.233219591622298 0
+  rotation 0 0 1 2.0224839534629346
+  name "Thymio22"
+  controller "main_skript"
+  supervisor TRUE
+  castLight FALSE
+  bodySlot [
+    Emitter {
+      name "emitter22"
+      type "infra-red"
+      range 0.4
+    }
+    Receiver {
+      name "receiver22"
+      type "infra-red"
+      aperture 3
+    }
+  ]
+}
+DEF Thymio23 Thymio2 {
+  translation 4.638950938027133 0.32913275082051746 0
+  rotation 0 0 1 0.4450008318880487
+  name "Thymio23"
+  controller "main_skript"
+  supervisor TRUE
+  castLight FALSE
+  bodySlot [
+    Emitter {
+      name "emitter23"
+      type "infra-red"
+      range 0.4
+    }
+    Receiver {
+      name "receiver23"
+      type "infra-red"
+      aperture 3
+    }
+  ]
+}
+DEF Thymio24 Thymio2 {
+  translation 3.738101748148114 0.7101833220173661 0
+  rotation 0 0 1 1.085405752271576
+  name "Thymio24"
+  controller "main_skript"
+  supervisor TRUE
+  castLight FALSE
+  bodySlot [
+    Emitter {
+      name "emitter24"
+      type "infra-red"
+      range 0.4
+    }
+    Receiver {
+      name "receiver24"
+      type "infra-red"
+      aperture 3
+    }
+  ]
+}
+DEF Thymio25 Thymio2 {
+  translation 1.3389206447304183 4.245387991065087 0
+  rotation 0 0 1 3.904186291364596
+  name "Thymio25"
+  controller "main_skript"
+  supervisor TRUE
+  castLight FALSE
+  bodySlot [
+    Emitter {
+      name "emitter25"
+      type "infra-red"
+      range 0.4
+    }
+    Receiver {
+      name "receiver25"
+      type "infra-red"
+      aperture 3
+    }
+  ]
+}
+Wall {
+  translation 0.25 0.5 0
+  rotation 0 0 1 1.5707963267948966
+  name "wall 0"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 1.25 0.5 0
+  rotation 0 0 1 1.5707963267948966
+  name "wall 1"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 2.25 0.5 0
+  rotation 0 0 1 1.5707963267948966
+  name "wall 2"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 3.25 0.5 0
+  rotation 0 0 1 1.5707963267948966
+  name "wall 3"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 4.75 0.5 0
+  rotation 0 0 1 1.5707963267948966
+  name "wall 4"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 0.75 1.0 0
+  rotation 0 0 1 1.5707963267948966
+  name "wall 5"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 3.75 1.0 0
+  rotation 0 0 1 1.5707963267948966
+  name "wall 6"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 0.75 1.5 0
+  rotation 0 0 1 1.5707963267948966
+  name "wall 7"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 2.75 1.5 0
+  rotation 0 0 1 1.5707963267948966
+  name "wall 8"
+  size 0.01 1.5 0.1
+}
+Wall {
+  translation 4.75 1.5 0
+  rotation 0 0 1 1.5707963267948966
+  name "wall 9"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 1.0 2.0 0
+  rotation 0 0 1 1.5707963267948966
+  name "wall 10"
+  size 0.01 1.0 0.1
+}
+Wall {
+  translation 2.25 2.0 0
+  rotation 0 0 1 1.5707963267948966
+  name "wall 11"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 3.75 2.0 0
+  rotation 0 0 1 1.5707963267948966
+  name "wall 12"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 4.75 2.0 0
+  rotation 0 0 1 1.5707963267948966
+  name "wall 13"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 0.25 2.5 0
+  rotation 0 0 1 1.5707963267948966
+  name "wall 14"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 1.5 2.5 0
+  rotation 0 0 1 1.5707963267948966
+  name "wall 15"
+  size 0.01 1.0 0.1
+}
+Wall {
+  translation 2.75 2.5 0
+  rotation 0 0 1 1.5707963267948966
+  name "wall 16"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 4.75 2.5 0
+  rotation 0 0 1 1.5707963267948966
+  name "wall 17"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 0.25 3.0 0
+  rotation 0 0 1 1.5707963267948966
+  name "wall 18"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 1.5 3.0 0
+  rotation 0 0 1 1.5707963267948966
+  name "wall 19"
+  size 0.01 1.0 0.1
+}
+Wall {
+  translation 3.75 3.0 0
+  rotation 0 0 1 1.5707963267948966
+  name "wall 20"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 2.75 3.5 0
+  rotation 0 0 1 1.5707963267948966
+  name "wall 21"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 4.75 3.5 0
+  rotation 0 0 1 1.5707963267948966
+  name "wall 22"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 0.25 4.0 0
+  rotation 0 0 1 1.5707963267948966
+  name "wall 23"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 1.25 4.0 0
+  rotation 0 0 1 1.5707963267948966
+  name "wall 24"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 2.25 4.0 0
+  rotation 0 0 1 1.5707963267948966
+  name "wall 25"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 4.25 4.0 0
+  rotation 0 0 1 1.5707963267948966
+  name "wall 26"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 0.75 4.5 0
+  rotation 0 0 1 1.5707963267948966
+  name "wall 27"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 1.75 4.5 0
+  rotation 0 0 1 1.5707963267948966
+  name "wall 28"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 3.0 4.5 0
+  rotation 0 0 1 1.5707963267948966
+  name "wall 29"
+  size 0.01 1.0 0.1
+}
+Wall {
+  translation 0.5 0.75 0
+  rotation 0 0 1 0
+  name "wall 30"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 0.5 3.75 0
+  rotation 0 0 1 0
+  name "wall 31"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 0.5 4.75 0
+  rotation 0 0 1 0
+  name "wall 32"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 1.0 1.75 0
+  rotation 0 0 1 0
+  name "wall 33"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 1.0 3.75 0
+  rotation 0 0 1 0
+  name "wall 34"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 1.5 0.5 0
+  rotation 0 0 1 0
+  name "wall 35"
+  size 0.01 1.0 0.1
+}
+Wall {
+  translation 1.5 2.0 0
+  rotation 0 0 1 0
+  name "wall 36"
+  size 0.01 1.0 0.1
+}
+Wall {
+  translation 1.5 3.5 0
+  rotation 0 0 1 0
+  name "wall 37"
+  size 0.01 1.0 0.1
+}
+Wall {
+  translation 2.0 0.25 0
+  rotation 0 0 1 0
+  name "wall 38"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 2.0 1.25 0
+  rotation 0 0 1 0
+  name "wall 39"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 2.0 3.25 0
+  rotation 0 0 1 0
+  name "wall 40"
+  size 0.01 2.5 0.1
+}
+Wall {
+  translation 2.5 1.5 0
+  rotation 0 0 1 0
+  name "wall 41"
+  size 0.01 1.0 0.1
+}
+Wall {
+  translation 2.5 3.75 0
+  rotation 0 0 1 0
+  name "wall 42"
+  size 0.01 2.5 0.1
+}
+Wall {
+  translation 3.0 1.5 0
+  rotation 0 0 1 0
+  name "wall 43"
+  size 0.01 1.0 0.1
+}
+Wall {
+  translation 3.0 2.75 0
+  rotation 0 0 1 0
+  name "wall 44"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 3.0 4.25 0
+  rotation 0 0 1 0
+  name "wall 45"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 3.5 1.0 0
+  rotation 0 0 1 0
+  name "wall 46"
+  size 0.01 1.0 0.1
+}
+Wall {
+  translation 3.5 3.25 0
+  rotation 0 0 1 0
+  name "wall 47"
+  size 0.01 2.5 0.1
+}
+Wall {
+  translation 4.0 0.25 0
+  rotation 0 0 1 0
+  name "wall 48"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 4.0 2.0 0
+  rotation 0 0 1 0
+  name "wall 49"
+  size 0.01 1.0 0.1
+}
+Wall {
+  translation 4.0 3.25 0
+  rotation 0 0 1 0
+  name "wall 50"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 4.0 4.25 0
+  rotation 0 0 1 0
+  name "wall 51"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 4.5 0.75 0
+  rotation 0 0 1 0
+  name "wall 52"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 4.5 2.75 0
+  rotation 0 0 1 0
+  name "wall 53"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 4.5 3.75 0
+  rotation 0 0 1 0
+  name "wall 54"
+  size 0.01 0.5 0.1
+}
+Wall {
+  translation 4.5 4.75 0
+  rotation 0 0 1 0
+  name "wall 55"
+  size 0.01 0.5 0.1
+}
+DEF Goal Robot {
+  translation 0.75 3.75 0
+  name "goal"
+  controller "goal_supervisor"
+  supervisor TRUE
+}
