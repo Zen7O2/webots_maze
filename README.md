@@ -1,1 +1,6 @@
-# webots_maze
+A webots crash can occasionally be observed when a robot is removed (when reaching the goal).
+I was able to pin down the problem to a interaction between the remove() function (line 449 in the main_skript.py controller) and another supervisor (goal_supervisor at the bottom of the wbt file) being present.
+My minimal setup to reproduce the crash included removing everything from the goal_supervisor.py controller script (-> empty file) and running the simulation as normal (open wbt file in webots, press play). The crash still occures when running the simulation as given, but it can be simplified.
+The crash didn't occur when keeping the supervisor=True flag but removing the controller reference for the goal_supervisor in the world file (even though the controller was empty).
+
+Disclaimer: the project is heavily work in progress and mostly stitched together to stay within my given deadlines. I am aware that the code is not pretty and can probably be done way better. I had to cut corners to reduce computational load while keeping a relatively complex control structure to handle edgecases. The issue can maybe be simplified even more (i.e. removing walls, simplifying (normal) robot controller,...) but I did not have time to test that yet. 
